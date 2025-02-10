@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="m-logo.png">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle:wght@300;400;700&family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reign.css">
+    <style>
+        .details { display: none; animation: fadeIn 0.4s ease; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+           
+            <div class="header-content">
+                <h1>My Portfolio</h1>
+            </div>
+        </header>
+
+        <main>
+            <section id="articles" class="section active">
+                <h2 class="section-title">MY 2024</h2>
+                
+                <article class="article-item">
+                    <div class="article-images">
+                        <img src="CAM.jpg" alt="CTU Campus">
+                        <img src="VBS.jpg" alt="CTU Students">
+                    </div>
+                    <h3>My Life Story (January - June)</h3>
+                    <p>Two of the most significant events that shaped these months were my participation in a camping trip at Kinatarkan and my role as one of the teachers in the Vacation Bible Seminar at Paypay.</p>
+                    <button onclick="toggleDetails('coding-details')">Read More</button>
+                    <div id="coding-details" class="details">
+                        <p>Camping at Kinatarkan-
+
+                            Joining the camping at Kinatarkan was an unforgettable experience. Surrounded by the beauty of nature, I had the chance to disconnect from daily stress and reconnect with God, my peers, and myself. The trip was filled with adventure, reflection, and fellowship.
+                            
+                            We engaged in different activities such as team-building games, outdoor survival challenges, and meaningful group discussions. The nights under the starry sky were moments of deep reflection, where we shared stories, sang worship songs, and strengthened our bond with one another. Through this experience, I learned the value of perseverance, faith, and the importance of trusting God’s plan.
+                            
+                            Teaching in the Vacation Bible Seminar at Paypay-
+                            
+                            One of the most fulfilling experiences of this year was being a teacher in the Vacation Bible Seminar at Paypay. This opportunity allowed me to share my faith with young minds and help guide them in their spiritual journey. Teaching was both a challenge and a blessing.
+                            
+                            Every day, I prepared lessons, shared Bible stories, and engaged the children in fun and meaningful activities. Seeing their enthusiasm and eagerness to learn about God filled my heart with joy. It reminded me of the importance of faith in our daily lives and how we can be instruments in spreading His word.
+                            
+                            Though it was not always easy, the experience taught me patience, understanding, and the power of encouragement. By the end of the seminar, I felt a deep sense of fulfillment, knowing that I had played a small part in helping these children grow in their faith.
+                            
+                            </p>
+                </article>
+
+                <article class="article-item">
+                    <div class="article-images">
+                        <img src="BFFS.jpg" alt="Canteen">
+                        <img src="AMICUS.jpg" alt="Canteen">
+                    </div>
+                    <h3>My Life Story (July - October)</h3>
+                    <p>From July to October, my life was filled with moments of faith, friendship, and joy. One of the most memorable experiences was joining a youth retreat in Paril, Cebu City.</p>
+                    <button onclick="toggleDetails('canteen-details')">Read More</button>
+                    <div id="canteen-details" class="details">
+                        <p>It was a time of reflection, prayer, and spiritual growth. I felt closer to God and learned valuable lessons that strengthened my faith. Being surrounded by people who shared the same beliefs made the experience even more meaningful.
+
+                            Aside from the retreat, I also had the chance to bond with my friends at Diacor Leisure Farm. It was a refreshing escape from daily life, filled with laughter, good conversations, and unforgettable moments. We enjoyed the beauty of nature, relaxed, and simply enjoyed each other's company. These moments reminded me of the importance of friendship and taking time to appreciate the little things in life.
+                            
+                            Despite the struggles I face, these experiences gave me strength and motivation to keep going. With God, family, and friends by my side, I know I can overcome anything.</p>
+                    </div>
+                </article>
+
+                <article class="article-item">
+                    <div class="article-images">
+                        <img src="FAMP.jpg" alt="Weightlifting Fairy Kim Bok-joo">
+                        <img src="FAM.jpg" alt="Weightlifting Fairy Kim Bok-joo">
+                    </div>
+                    <h3>My Life Story (October - December)</h3>
+                    <p>From October to December, I spent more time with my family, creating beautiful memories that I will always cherish. </p>
+                    <button onclick="toggleDetails('kdrama-details')">Read More</button>
+                    <div id="kdrama-details" class="details">
+                        <p>Life can be busy and challenging, but being with my loved ones reminds me of what truly matters.
+
+                            During these months, we shared meals, laughed together, and supported each other through life’s ups and downs. Whether it was simple conversations at home or special gatherings, every moment felt precious. These times strengthened our bond and reminded me that family is my greatest source of love and strength.
+                            
+                            No matter what struggles I face, I know that my family will always be there for me. As the year ends, I feel grateful for their presence in my life, and I look forward to more moments with them in the coming year.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>By Myren.</p>
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDetails(detailsId) {
+            const details = document.getElementById(detailsId);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
